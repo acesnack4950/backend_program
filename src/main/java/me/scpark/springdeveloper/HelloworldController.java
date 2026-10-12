@@ -16,9 +16,6 @@ public class HelloworldController {
     @PostMapping("/test")
     public String postTest() { return "Post Test response!!!!!";}
 
-    @GetMapping("/test")
-    public String test() { return "Hello Everyone!!!!!";}
-
     @PutMapping("/test")
     public String putTest() { return "Put Test response!!!!";}
 }
