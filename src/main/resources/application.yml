@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    # mem 대신 file: 경로를 지정하여 내 컴퓨터 파일로 저장
+    url: jdbc:h2:file:./data/testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      # [핵심] create -> update로 변경해야 서버 재시작 시 기존 테이블과 데이터를 유지합니다.
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # 서버를 켤 때 data.sql로 데이터를 매번 새로 넣는 설정을 끄거나 주석 처리합니다.
+  # sql:
+  #   init:
+  #     mode: never
