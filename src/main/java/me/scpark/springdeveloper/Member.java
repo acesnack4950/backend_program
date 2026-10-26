@@ -26,7 +26,13 @@ public class Member {
         this.name = name;
         this.email = email;
     }
+
     public Member(String name) {
         this(name, null);
+    }
+
+    // 이번 실습에서 추가: 이름 변경 메서드 (변경 감지 테스트용)
+    public void changeName(String name) {
+        this.name = name;
     }
 }
