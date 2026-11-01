@@ -3,7 +3,7 @@ package me.scpark.springdeveloper;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class HelloworldController {
+public class HelloWorldController {
     // 메소드 추가 방식
     @GetMapping("/hello")
     public String hello() {
